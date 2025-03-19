@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3c3a39;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .logo a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+    justify-content: center;
+    margin: 2px 10px;
+  }
+
+
+
+  /* mobile home styling */
+  .home,
+  .home_text {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .home {
+    padding: 50px 0 5px 0;
+  }
+
+  .mobile_home_bag {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .mobile_home_bag img {
+    width: 150px;
+    margin-top: -250px;
+  }
+
+  .home_desk_list {
+    display: none;
+  }
+
+  .home_text h1 {
+    color: #ff6b00;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 100px 0 20px;
+  }
+
+  .home_text h2 {
+    font-size: 25px;
+    color: #fff;
+    padding: 0 2px 0 20px;
+  }
+
+
+
+
+
+  /* projects section mobile styling */
+  .project_headings h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .project_headings hr {
+    margin: 10%;
+  }
+
+  .project_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .projects_cardsmain {
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .post ul li {
+    background-color: ;
+    list-style: none;
+    border: solid black 1px;
+    padding: 5px;
+  }
+
+  .post h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
+  .post button {
+    background-color: #ff6b00;
+    color: #fff;
+    border: 0;
+    width: 100px;
+    height: 30px;
+  }
+
+  .projects_card {
+    width: 327px;
+    height: 386px;
+    background: url(../images/Img\ Placeholder.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+
+  .projects_card h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
+  .projects_card ul li {
+    color: #fff;
+    background-color: grey;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
+  .projects_card button {
+    width: 100%;
+    padding: 5px;
+    background-color: #ff6b00;
+    border: navajowhite;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .about {
+    background-color: #000;
+    width: 100%;
+    padding: 120px 24px;
+    margin-top: 90px;
+  }
+
+  .about_text h2 {
+    color: #ff6b00;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 100px 0 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about_text {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 55px 0 20px;
+  }
+
+  .about_text img {
+    margin-right: 0;
+    height: 20%;
+    width: 35%;
+    margin-left: 90%;
+  }
+
+  .about button {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    gap: 10px;
+    margin: 10px;
+    bottom: 0;
+  }
+
+  .about hr {
+    background-color: gray;
+    padding: 1px;
+    border: 0;
+  }
+
+  /* cards */
+
+  .about_cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    color: #fff;
+  }
+
+  .about_cards .about_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about_card span {
+    display: flex;
+    gap: 10px;
+  }
+
+
+
+  .about_card ul li {
+    list-style: none;
+  }
+
+  .contact {
+    background-color: #fff;
+  }
+
+  .contact_text {
+    color: #172b4d;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
+    max-width: 700px;
+    margin-top: 25px;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 25px;
+    gap: 24px;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 327px;
+    height: 48px;
+  }
+
+  .contact_form button {
+    background-color: #ff6b00;
+    color: #fff;
+    margin-left: 35%;
+    display: flex;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    gap: 25px;
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer ul {
+    justify-content: center;
+  }
+
+  .home_mob_list ul {
+    display: flex;
+    padding: 0 55px 0 20px;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+  }
+
+
+
+  .projects_card ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+  }
+
+  .post ul {
+    display: flex;
+    gap: 12px;
+    margin: 2%;
+  }
+
+  .about_card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    margin: 10px 0;
+  }
+
+  .mobile_menu p {
+    background-color: #fff;
+    padding: 2px 15px;
+  }
+
+  .home_text p {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 55px 0 20px;
+  }
+
+  .post p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    margin: 2%;
+    padding: 20px;
+  }
+
+  .projects_card p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer i {
+    font-style: italic;
+    font-size: 0.9em;
+  }
+}
