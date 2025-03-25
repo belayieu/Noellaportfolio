@@ -8,6 +8,11 @@ header {
   background-color: #3c3a39;
 }
 
+menu .desktop_menu {
+  color: #fff;
+  text-decoration: green;
+}
+
 @media (max-width: 768px) {
   nav {
     display: flex;
@@ -56,6 +61,10 @@ header {
     border: 1px solid red;
   }
 
+  .desktop_home_bag {
+    display: none;
+  }
+
   .mobile_home_bag {
     display: flex;
     align-items: center;
@@ -73,9 +82,12 @@ header {
 
   .home_text h1 {
     color: #ff6b00;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 55px;
+    font-weight: 400px;
     padding: 0 100px 0 20px;
+    width: 566px;
+    height: 160px;
+    line-height: 81.5px;
   }
 
   .home_text h2 {
@@ -368,7 +380,7 @@ header {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -413,6 +425,10 @@ header {
   .home {
     padding: 50px 0 5px 0;
     width: 100%;
+  }
+
+  .desktop_home_bag {
+    display: none;
   }
 
   .mobile_home_bag {
@@ -585,7 +601,7 @@ header {
 
   .about_cards {
     margin-top: 50px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -719,6 +735,405 @@ header {
     justify-content: center;
     text-align: center;
     font-size: 18px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+
+  .projects_card p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  footer i {
+    font-style: italic;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  .logo a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .desktop_menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 2px 10px;
+    padding: 10px;
+  }
+
+  .desktop_menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .desktop_home_bag img {
+    width: 800px;
+    margin-top: -708px;
+    margin-left: 10px;
+    height: 769px;
+  }
+
+  .desktop_menu ul li a img {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+  }
+
+  /* desktop home styling */
+  .home,
+  .home_text {
+    background-color: #000;
+    display: flex;
+    margin-left: 2%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+
+  .mobile_home_bag {
+    display: none;
+  }
+
+  .desktop_home_bag {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .home_text h1 {
+    color: #ff6b00;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 100px 0 20px;
+    margin-left: 2%;
+  }
+
+  .home_text h2 {
+    font-size: 25px;
+    color: #fff;
+    padding: 0 2px 0 20px;
+    margin-left: 2%;
+  }
+
+  .project_headings {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: 5px;
+  }
+
+  .project_headings hr {
+    margin-left: 190px;
+    margin-top: -10px;
+    width: 500px;
+  }
+
+  .project_cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px;
+    gap: 10px;
+  }
+
+  .projects_cardsmain {
+    margin: 10%;
+    display: flex;
+  }
+
+  .post {
+    justify-content: right;
+    align-items: right;
+    margin-right: 20%;
+  }
+
+  .post ul li {
+    background-color: #fff;
+    list-style: none;
+    border: solid black 1px;
+    padding: 5px;
+  }
+
+  .post h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .post button {
+    background-color: #ff6b00;
+    color: #fff;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .projects_card {
+    width: 327px;
+    height: 386px;
+    background: url(../images/Img\ Placeholder.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+
+  .projects_card h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .projects_card ul li {
+    color: #fff;
+    background-color: grey;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+
+  .projects_card button {
+    width: 100%;
+    padding: 5px;
+    background-color: #ff6b00;
+    border: navajowhite;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .about {
+    background-color: #000;
+    width: 100%;
+    padding: 120px 24px;
+    margin-top: 90px;
+    align-items: center;
+  }
+
+  .about_text h2 {
+    color: #ff6b00;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 100px 0 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about_text {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 60%;
+    line-height: 32px;
+  }
+
+  .abt_bg {
+    display: none;
+  }
+
+  .abt_desk_bg {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .about button {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    gap: 10px;
+    margin-top: 30px;
+    bottom: 0;
+  }
+
+  .about hr {
+    background-color: gray;
+    padding: 1px;
+    border: 0;
+  }
+
+  /* cards */
+
+  .about_cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+    color: #fff;
+  }
+
+  .about_cards .about_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_card span {
+    display: flex;
+    gap: 10px;
+  }
+
+  .about_card ul li {
+    list-style: none;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .contact_text {
+    color: black;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 25px;
+    text-align: left;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 25px;
+    gap: 24px;
+    margin-left: 50px;
+    width: 100%;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 48px;
+  }
+
+  .contact_form button {
+    background-color: #ff6b00;
+    color: #fff;
+    margin-left: 35%;
+    display: flex;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    gap: 25px;
+  }
+
+  footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer ul {
+    justify-content: center;
+    display: flex;
+    top: 448px;
+    gap: 12px;
+  }
+
+  .desktop_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .home_mob_list {
+    margin-top: 150px;
+    padding: 20px;
+  }
+
+  .projects_card ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+  }
+
+  .post ul {
+    display: flex;
+    gap: 12px;
+    margin-left: 20px;
+  }
+
+  .about_card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    margin: 10px 0;
+  }
+
+  .home_text {
+    margin-top: 10%;
+  }
+
+  .mobile_menu p {
+    background-color: #fff;
+    padding: 2px 15px;
+  }
+
+  .home_text p {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 55px 0 20px;
+    margin-left: 2%;
+    line-height: 32px;
+    font-weight: 400;
+    width: 566px;
+    height: 123px;
+  }
+
+  .post p {
+    color: black;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: 20px;
     margin-left: 20px;
     padding: 20px;
   }
