@@ -56,9 +56,8 @@ menu .desktop_menu {
   }
 
   .home {
-    padding: 50px 0 5px 0;
+    padding: 80px 0 5px 0;
     width: 100%;
-    border: 1px solid red;
   }
 
   .desktop_home_bag {
@@ -82,12 +81,9 @@ menu .desktop_menu {
 
   .home_text h1 {
     color: #ff6b00;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 400px;
     padding: 0 100px 0 20px;
-    width: 566px;
-    height: 160px;
-    line-height: 81.5px;
   }
 
   .home_text h2 {
@@ -116,9 +112,23 @@ menu .desktop_menu {
   }
 
   .projects_cardsmain {
-    margin: 10%;
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .projects_cardsmain image img {
+    width: 320px;
+    height: 270px;
+  }
+
+  .post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
   }
 
   .post ul li {
@@ -207,10 +217,6 @@ menu .desktop_menu {
   .abt_bg {
     display: flex;
     justify-content: end;
-  }
-
-  .abt_bg img {
-    width: 150px;
   }
 
   .about button {
@@ -343,6 +349,10 @@ menu .desktop_menu {
     justify-content: center;
   }
 
+  .abt_desk_bg {
+    display: none;
+  }
+
   footer p {
     margin: 10px 0;
   }
@@ -380,7 +390,7 @@ menu .desktop_menu {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -751,7 +761,7 @@ menu .desktop_menu {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -784,10 +794,9 @@ menu .desktop_menu {
   }
 
   .desktop_home_bag img {
-    width: 800px;
-    margin-top: -708px;
-    margin-left: 10px;
-    height: 769px;
+    width: 600px;
+    margin-top: -408px;
+    height: 569px;
   }
 
   .desktop_menu ul li a img {
@@ -797,14 +806,25 @@ menu .desktop_menu {
   }
 
   /* desktop home styling */
+
+
   .home,
   .home_text {
     background-color: #000;
     display: flex;
-    margin-left: 2%;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+  }
+
+  .home {
+    flex-direction: row;
+    padding: 0 0 0 10px;
+  }
+
+  .home_text {
+    padding: 0 1000px 0 0;
+    margin-top: 10%;
   }
 
   .mobile_menu {
@@ -1078,9 +1098,14 @@ menu .desktop_menu {
     gap: 20px;
   }
 
-  .home_mob_list {
-    margin-top: 150px;
-    padding: 20px;
+  .home_desk_list,
+  .home_desk_list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
   }
 
   .projects_card ul {
@@ -1108,8 +1133,8 @@ menu .desktop_menu {
     margin: 10px 0;
   }
 
-  .home_text {
-    margin-top: 10%;
+  .home_mob_list {
+    display: none;
   }
 
   .mobile_menu p {
@@ -1124,7 +1149,6 @@ menu .desktop_menu {
     margin-left: 2%;
     line-height: 32px;
     font-weight: 400;
-    width: 566px;
     height: 123px;
   }
 
